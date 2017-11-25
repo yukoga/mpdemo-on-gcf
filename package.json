@@ -1,7 +1,7 @@
 {
-  "name": "com.yukoga",
-  "version": "1.0.0",
-  "description": "test.",
+  "name": "mpdemo on gcf",
+  "version": "0.0.1",
+  "description": "Measurement Protocol sample application on Google Cloud Functions.",
   "main": "app.js",
   "files": [
     "util.js",
@@ -10,6 +10,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yukoga@google.com",
+  "license": "Apache-2.0"
 }

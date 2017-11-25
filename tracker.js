@@ -32,6 +32,7 @@ class Tracker {
       path: "/collect",
       method: "POST",
       headers: {
+        "User-Agent": "mpdemo/0.0.1 (A sample app on Google Cloud Functions)",
         "Content-type": "application/x-www-form-urlencoded",
         "Content-Length": Buffer.byteLength(postData)
       }
