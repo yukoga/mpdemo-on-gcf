@@ -5,6 +5,12 @@ exports.mpdemo = function(req, res) {
   var tids = req.body.tids;
   var data = req.body.data;
 
+  var ip = (req.headers['x-forwarded-for'] || '').split(', ')[0] ||
+    req.connection.remoteAddress || 
+    req.socket.remoteAddress || 
+    req.connection.socket.remoteAddress
+  data['uip'] = ip
+
   if (tids && tids.length > 1) {
     tracker.setParams(data);
     for (var tid of tids) {
